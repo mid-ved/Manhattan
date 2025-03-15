@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2c1818;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.top {
+    background: #fff;
+    border: 0;
+    padding: 1.5% 2.3%;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+header {
+    .information {
+        button {
+            padding: 12px 17px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 1px;
+            border-radius: 5px;
+            border: 0;
+            background: #ff5c05;
+            color: #fff;
+            margin: 50px;
+        }
+
+        .choice {
+            border: 2px dashed #8e0ba8;
+            margin: 0 50px;
+            width: 335px;
+            border-radius: 5px;
+
+            details {
+                background: #3e2323;
+                padding: 15px 0;
+                margin: 15px;
+                transition: .5s;
+                width: 303px;
+
+                &:focus {
+                    background: #ff5c05;
+                }
+                
+                summary {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    text-align: left;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+        width: 60%;
+
+        img {
+            width: 18%;
+            height: 100%;
+            transform: translate(5%, 90px);
+        }
+
+        .frame1 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            transform: translateX(40px);
+            margin-top: 100px;
+        
+            li, a {
+                color: #ebebeb;
+                list-style: none;
+                text-decoration: none;
+                padding: 0 0.3em;
+                font-size: 0.8em;
+                transition: .5s;
+
+                &:hover {
+                    color: #ff5c05;
+                }
+            }
+
+            .leading {
+                color: #ff5c05;
+            }
+        }
+
+        button {
+            background: none;
+            color: #ebebeb;
+            border: 2px solid #ff5c05;
+            border-radius: 5px;
+            text-transform: uppercase;
+            margin: 0 5px;
+            padding: 10px 20px;
+            position: absolute;
+            right: 40px;
+            top: 370px;
+            transition: all .5s;
+            text-shadow: none;
+
+            &:hover {
+                box-shadow:
+                    inset 2px 3px 7px 1px #ff5c05,
+                    0 1px 1px 0px #ff5c05;
+                text-shadow: #fff 0.5px 0.5px;
+            }
+        }
+    }
+}
+
+.menu {
+    .link {
+        border: 2px dashed #8e0ba8;
+        padding: 5px;
+        margin: 50px;
+        width: 160px;
+        border-radius: 5px;
+
+        img {
+            margin: 5px 15px 2px 15px;
+        }
+    }
+
+    .dish {
+        width: 50%;
+        height: 120px;
+        text-align: justify;
+        margin: 10px 50px;
+
+        img {
+            float: left;
+            max-width: 30%;
+            min-width: 20%;
+            aspect-ratio: 1 / 1;
+            margin-right: 10px;
+        }
+
+        h3 {
+            clear: right;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: left;
+            padding: 10px 0;
+        }
+
+        p {
+            clear: right;
+            font-size: 12px;
+        }
+
+        price {
+            font-size: 14px;
+            border: 2px solid #ff5c05;
+            border-radius: 3px;
+            padding: 5px 8px;
+            display: flex;
+            width: 57px;
+            height: 30px;
+            transform: translate(280%, -120%);
+            margin-bottom: -60px;
+        }
+
+        weight {
+            clear: right;
+            color: #ff5c05;
+            font-size: 14px;
+            text-align: left;
+            padding: 10px 0px;
+        }
+    }
+
+    .date {
+        padding: 7px 10px;
+        background: #ff5c05;
+        color: #fff;
+        font-weight: bold;
+        border: 0;
+        border-radius: 5px;
+        transform: translate(300%, -800%);
+    }
+    
+    .reservation {
+        background: none;
+        color: #ebebeb;
+        border: 2px solid #ff5c05;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin: 20px 5px;
+        padding: 10px 20px;
+        
+        transition: all .5s;
+        text-shadow: none;
+
+        &:hover {
+            box-shadow:
+                inset 2px 3px 7px 1px #ff5c05,
+                0 1px 1px 0px #ff5c05;
+            text-shadow: #fff 0.5px 0.5px;
+        }
+    }
+}
+
+.contact {
+    text-align: center;
+    margin: 90px 10px 0 10px;
+
+    .top {
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 20px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pillar {
+        display: flex;
+
+        .pillar-1 {
+            width: 25%;
+            aspect-ratio: 3/4;
+            background: #3f2121;
+            border: 2px solid #ff5c05;
+            padding: 35px 40px;
+            text-align: left;
+            margin: 20px 0 20px 40px;
+            border-radius: 5px;
+
+            p {
+                font-size: 12px;
+                margin: -5px 0;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+            
+            hr {
+                border-color: #aeaeae;
+            }
+        }
+
+        .pillar-2 {
+            margin: 20px;
+            border: 2px solid #ff5c05;
+            width: 904px;
+            height: 574px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+footer {
+    position: relative;
+
+    hr {
+        margin-top: 100px;
+        border-color: #aeaeae;
+        margin: 60px 50px;
+    }
+
+    .p1 {
+        position: absolute;
+        bottom: -50px;
+        left: 50px;
+        color: #aeaeae;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .p2 {
+        position: absolute;
+        bottom: -50px;
+        right: 50px;
+        color: #aeaeae;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+}
